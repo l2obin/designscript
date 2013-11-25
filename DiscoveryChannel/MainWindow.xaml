@@ -1,0 +1,33 @@
+﻿<Window x:Class="DiscoveryChannel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="txtInput"
+                 AcceptsReturn="True"
+                 Background="#222"
+                 Foreground="#888"></TextBox>
+        
+        <TextBox Grid.Row="0"
+                 Grid.Column="1"
+                 Name="txtOutput"
+                 AcceptsReturn="True"
+                 Background="#222"
+                 Foreground="#888"></TextBox>
+        
+        <Button Grid.Row="1"
+                Click="RunCode">Run Code</Button>
+        
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Click="RunAST">Run AST</Button>
+    </Grid>
+</Window>
